@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/c/gigaUI/src/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
