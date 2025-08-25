@@ -2,16 +2,61 @@
 ---
 events:
   -
+    kind: "find-v1"
+    backtrace:
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Windows - 10.0.26100 - AMD64
+      The system is: Linux - 6.8.0-65-generic - x86_64
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
@@ -29,95 +74,37 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Windows/System32/gmake.com"
-      - "C:/Windows/System32/gmake.exe"
-      - "C:/Windows/System32/gmake"
-      - "C:/Windows/gmake.com"
-      - "C:/Windows/gmake.exe"
-      - "C:/Windows/gmake"
-      - "C:/Windows/System32/wbem/gmake.com"
-      - "C:/Windows/System32/wbem/gmake.exe"
-      - "C:/Windows/System32/wbem/gmake"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gmake.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gmake.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gmake"
-      - "C:/Windows/System32/OpenSSH/gmake.com"
-      - "C:/Windows/System32/OpenSSH/gmake.exe"
-      - "C:/Windows/System32/OpenSSH/gmake"
-      - "C:/Program Files/Git/cmd/gmake.com"
-      - "C:/Program Files/Git/cmd/gmake.exe"
-      - "C:/Program Files/Git/cmd/gmake"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gmake.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gmake.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gmake"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gmake.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gmake.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gmake"
-      - "C:/Users/eriks/scoop/shims/gmake.com"
-      - "C:/Users/eriks/scoop/shims/gmake.exe"
-      - "C:/Users/eriks/scoop/shims/gmake"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gmake.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gmake.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gmake"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gmake.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gmake.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gmake"
-      - "C:/Windows/System32/make.com"
-      - "C:/Windows/System32/make.exe"
-      - "C:/Windows/System32/make"
-      - "C:/Windows/make.com"
-      - "C:/Windows/make.exe"
-      - "C:/Windows/make"
-      - "C:/Windows/System32/wbem/make.com"
-      - "C:/Windows/System32/wbem/make.exe"
-      - "C:/Windows/System32/wbem/make"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/make.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/make.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/make"
-      - "C:/Windows/System32/OpenSSH/make.com"
-      - "C:/Windows/System32/OpenSSH/make.exe"
-      - "C:/Windows/System32/OpenSSH/make"
-      - "C:/Program Files/Git/cmd/make.com"
-      - "C:/Program Files/Git/cmd/make.exe"
-      - "C:/Program Files/Git/cmd/make"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/make.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/make.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/make"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/make.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/make.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/make"
-      - "C:/Users/eriks/scoop/shims/make.com"
-    found: "C:/Users/eriks/scoop/shims/make.exe"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+    found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
@@ -139,95 +126,49 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Windows/System32/cc.com"
-      - "C:/Windows/System32/cc.exe"
-      - "C:/Windows/System32/cc"
-      - "C:/Windows/cc.com"
-      - "C:/Windows/cc.exe"
-      - "C:/Windows/cc"
-      - "C:/Windows/System32/wbem/cc.com"
-      - "C:/Windows/System32/wbem/cc.exe"
-      - "C:/Windows/System32/wbem/cc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc"
-      - "C:/Windows/System32/OpenSSH/cc.com"
-      - "C:/Windows/System32/OpenSSH/cc.exe"
-      - "C:/Windows/System32/OpenSSH/cc"
-      - "C:/Program Files/Git/cmd/cc.com"
-      - "C:/Program Files/Git/cmd/cc.exe"
-      - "C:/Program Files/Git/cmd/cc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/cc.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/cc.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/cc"
-      - "C:/Users/eriks/scoop/shims/cc.com"
-      - "C:/Users/eriks/scoop/shims/cc.exe"
-      - "C:/Users/eriks/scoop/shims/cc"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/cc.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/cc.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/cc"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/cc.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/cc.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/cc"
-      - "C:/Windows/System32/gcc.com"
-      - "C:/Windows/System32/gcc.exe"
-      - "C:/Windows/System32/gcc"
-      - "C:/Windows/gcc.com"
-      - "C:/Windows/gcc.exe"
-      - "C:/Windows/gcc"
-      - "C:/Windows/System32/wbem/gcc.com"
-      - "C:/Windows/System32/wbem/gcc.exe"
-      - "C:/Windows/System32/wbem/gcc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc"
-      - "C:/Windows/System32/OpenSSH/gcc.com"
-      - "C:/Windows/System32/OpenSSH/gcc.exe"
-      - "C:/Windows/System32/OpenSSH/gcc"
-      - "C:/Program Files/Git/cmd/gcc.com"
-      - "C:/Program Files/Git/cmd/gcc.exe"
-      - "C:/Program Files/Git/cmd/gcc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe"
+      - "/usr/local/sbin/cc"
+      - "/usr/local/bin/cc"
+      - "/usr/sbin/cc"
+      - "/usr/bin/cc"
+      - "/sbin/cc"
+      - "/bin/cc"
+      - "/usr/games/cc"
+      - "/usr/local/games/cc"
+      - "/snap/bin/cc"
+      - "/usr/local/sbin/gcc"
+      - "/usr/local/bin/gcc"
+      - "/usr/sbin/gcc"
+    found: "/usr/bin/gcc"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -243,31 +184,30 @@ events:
     names:
       - "CMakeCCompilerId.c.in"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/"
-    found: "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/"
+    found: "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe 
+      Compiler: /usr/bin/gcc 
       Build flags: 
       Id flags:  
       
@@ -275,16 +215,16 @@ events:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        C:/c/gigaUI/src/build/CMakeFiles/4.1.0/CompilerIdC/a.exe
+        /home/erik/c/gigaUI/src/build/CMakeFiles/4.1.0/CompilerIdC/a.out
       
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -300,38 +240,33 @@ events:
     names:
       - "ar"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/ar.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/ar.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -347,38 +282,33 @@ events:
     names:
       - "ranlib"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/ranlib.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/ranlib.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -394,38 +324,33 @@ events:
     names:
       - "strip"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/strip.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/strip.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -441,38 +366,33 @@ events:
     names:
       - "ld"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/ld.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/ld.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -488,38 +408,33 @@ events:
     names:
       - "nm"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/nm.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/nm.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -535,38 +450,33 @@ events:
     names:
       - "objdump"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/objdump.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/objdump.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -582,38 +492,33 @@ events:
     names:
       - "objcopy"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/objcopy.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/objcopy.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -629,38 +534,33 @@ events:
     names:
       - "readelf"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/readelf.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/readelf.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -676,38 +576,43 @@ events:
     names:
       - "dlltool"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/dlltool.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/dlltool.exe"
+      - "/usr/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/snap/bin/dlltool"
+    found: false
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -723,38 +628,33 @@ events:
     names:
       - "addr2line"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-    searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/addr2line.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/addr2line.exe"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -770,70 +670,43 @@ events:
     names:
       - "tapi"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/tapi.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/tapi.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/tapi"
-      - "C:/Windows/System32/tapi.com"
-      - "C:/Windows/System32/tapi.exe"
-      - "C:/Windows/System32/tapi"
-      - "C:/Windows/tapi.com"
-      - "C:/Windows/tapi.exe"
-      - "C:/Windows/tapi"
-      - "C:/Windows/System32/wbem/tapi.com"
-      - "C:/Windows/System32/wbem/tapi.exe"
-      - "C:/Windows/System32/wbem/tapi"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
-      - "C:/Windows/System32/OpenSSH/tapi.com"
-      - "C:/Windows/System32/OpenSSH/tapi.exe"
-      - "C:/Windows/System32/OpenSSH/tapi"
-      - "C:/Program Files/Git/cmd/tapi.com"
-      - "C:/Program Files/Git/cmd/tapi.exe"
-      - "C:/Program Files/Git/cmd/tapi"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi"
-      - "C:/Users/eriks/scoop/shims/tapi.com"
-      - "C:/Users/eriks/scoop/shims/tapi.exe"
-      - "C:/Users/eriks/scoop/shims/tapi"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/tapi.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/tapi.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/tapi"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/snap/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
@@ -847,142 +720,48 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ar-13.2"
+      - "gcc-ar-13.1"
       - "gcc-ar-13"
       - "gcc-ar13"
       - "gcc-ar"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13.2.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13.2.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13.2"
-      - "C:/Windows/System32/gcc-ar-13.2.com"
-      - "C:/Windows/System32/gcc-ar-13.2.exe"
-      - "C:/Windows/System32/gcc-ar-13.2"
-      - "C:/Windows/gcc-ar-13.2.com"
-      - "C:/Windows/gcc-ar-13.2.exe"
-      - "C:/Windows/gcc-ar-13.2"
-      - "C:/Windows/System32/wbem/gcc-ar-13.2.com"
-      - "C:/Windows/System32/wbem/gcc-ar-13.2.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-13.2"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13.2.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13.2.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13.2"
-      - "C:/Program Files/Git/cmd/gcc-ar-13.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-13.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-13.2"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13.2.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13.2.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13.2"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13.2.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13.2.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13.2"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.2.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.2.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.2"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13.2.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13.2.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13.2"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar-13"
-      - "C:/Windows/System32/gcc-ar-13.com"
-      - "C:/Windows/System32/gcc-ar-13.exe"
-      - "C:/Windows/System32/gcc-ar-13"
-      - "C:/Windows/gcc-ar-13.com"
-      - "C:/Windows/gcc-ar-13.exe"
-      - "C:/Windows/gcc-ar-13"
-      - "C:/Windows/System32/wbem/gcc-ar-13.com"
-      - "C:/Windows/System32/wbem/gcc-ar-13.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-13"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-13"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-13"
-      - "C:/Program Files/Git/cmd/gcc-ar-13.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-13.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-13"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-13"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ar-13"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar-13"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-13"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar13.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar13.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar13"
-      - "C:/Windows/System32/gcc-ar13.com"
-      - "C:/Windows/System32/gcc-ar13.exe"
-      - "C:/Windows/System32/gcc-ar13"
-      - "C:/Windows/gcc-ar13.com"
-      - "C:/Windows/gcc-ar13.exe"
-      - "C:/Windows/gcc-ar13"
-      - "C:/Windows/System32/wbem/gcc-ar13.com"
-      - "C:/Windows/System32/wbem/gcc-ar13.exe"
-      - "C:/Windows/System32/wbem/gcc-ar13"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar13.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar13.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar13"
-      - "C:/Windows/System32/OpenSSH/gcc-ar13.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar13.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar13"
-      - "C:/Program Files/Git/cmd/gcc-ar13.com"
-      - "C:/Program Files/Git/cmd/gcc-ar13.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar13"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar13.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar13.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar13"
-      - "C:/Users/eriks/scoop/shims/gcc-ar13.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ar13.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ar13"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar13.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar13.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ar13"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar13.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar13.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar13"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar.exe"
+      - "/usr/bin/gcc-ar-13.1"
+      - "/usr/local/sbin/gcc-ar-13.1"
+      - "/usr/local/bin/gcc-ar-13.1"
+      - "/usr/sbin/gcc-ar-13.1"
+      - "/sbin/gcc-ar-13.1"
+      - "/bin/gcc-ar-13.1"
+      - "/usr/games/gcc-ar-13.1"
+      - "/usr/local/games/gcc-ar-13.1"
+      - "/snap/bin/gcc-ar-13.1"
+    found: "/usr/bin/gcc-ar-13"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
@@ -996,148 +775,314 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ranlib-13.2"
+      - "gcc-ranlib-13.1"
       - "gcc-ranlib-13"
       - "gcc-ranlib13"
       - "gcc-ranlib"
     candidate_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
     searched_directories:
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13.2.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13.2.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13.2"
-      - "C:/Windows/System32/gcc-ranlib-13.2.com"
-      - "C:/Windows/System32/gcc-ranlib-13.2.exe"
-      - "C:/Windows/System32/gcc-ranlib-13.2"
-      - "C:/Windows/gcc-ranlib-13.2.com"
-      - "C:/Windows/gcc-ranlib-13.2.exe"
-      - "C:/Windows/gcc-ranlib-13.2"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13.2.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13.2.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13.2"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13.2.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13.2.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13.2"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13.2"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13.2.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13.2.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13.2"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13.2.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13.2.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13.2"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.2.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.2.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.2"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13.2.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13.2.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13.2"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib-13"
-      - "C:/Windows/System32/gcc-ranlib-13.com"
-      - "C:/Windows/System32/gcc-ranlib-13.exe"
-      - "C:/Windows/System32/gcc-ranlib-13"
-      - "C:/Windows/gcc-ranlib-13.com"
-      - "C:/Windows/gcc-ranlib-13.exe"
-      - "C:/Windows/gcc-ranlib-13"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-13"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-13"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-13"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-13"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-13"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib-13"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-13"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib13.com"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib13.exe"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib13"
-      - "C:/Windows/System32/gcc-ranlib13.com"
-      - "C:/Windows/System32/gcc-ranlib13.exe"
-      - "C:/Windows/System32/gcc-ranlib13"
-      - "C:/Windows/gcc-ranlib13.com"
-      - "C:/Windows/gcc-ranlib13.exe"
-      - "C:/Windows/gcc-ranlib13"
-      - "C:/Windows/System32/wbem/gcc-ranlib13.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib13.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib13"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib13.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib13.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib13"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib13.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib13.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib13"
-      - "C:/Program Files/Git/cmd/gcc-ranlib13.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib13.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib13"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib13.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib13.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib13"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib13.com"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib13.exe"
-      - "C:/Users/eriks/scoop/shims/gcc-ranlib13"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13.com"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13.exe"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib13.com"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib13.exe"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib13"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib.exe"
+      - "/usr/bin/gcc-ranlib-13.1"
+      - "/usr/local/sbin/gcc-ranlib-13.1"
+      - "/usr/local/bin/gcc-ranlib-13.1"
+      - "/usr/sbin/gcc-ranlib-13.1"
+      - "/sbin/gcc-ranlib-13.1"
+      - "/bin/gcc-ranlib-13.1"
+      - "/usr/games/gcc-ranlib-13.1"
+      - "/usr/local/games/gcc-ranlib-13.1"
+      - "/snap/bin/gcc-ranlib-13.1"
+    found: "/usr/bin/gcc-ranlib-13"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu"
+      binary: "/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu'
+        
+        Run Build Command(s): /snap/cmake/1479/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_977de/fast
+        gmake[1]: Entering directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_977de.dir/build.make CMakeFiles/cmTC_977de.dir/build
+        gmake[2]: Entering directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu'
+        \x1b[0mBuilding C object CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o\x1b[0m
+        /usr/bin/gcc   -v -o CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1479/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.1.0-8ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.0 (Ubuntu 13.1.0-8ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/cmake/1479/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_977de.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjXtmmq.s
+        GNU C17 (Ubuntu 13.1.0-8ubuntu1~22.04) version 13.1.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: d80f7a3177dda410206b6b40a1a1b357
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/'
+         as -v --64 -o CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o /tmp/ccjXtmmq.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.'
+        \x1b[0mLinking C executable cmTC_977de\x1b[0m
+        /snap/cmake/1479/bin/cmake -E cmake_link_script CMakeFiles/cmTC_977de.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.1.0-8ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.0 (Ubuntu 13.1.0-8ubuntu1~22.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_977de' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_977de.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCTw39h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_977de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.1.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCTw39h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_977de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_977de' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_977de.'
+        /usr/bin/gcc  -v -Wl,-v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -o cmTC_977de
+        gmake[2]: Leaving directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu'
+        gmake[1]: Leaving directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=loading
+        found start of include info
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu']
+        ignore line: []
+        ignore line: [Run Build Command(s): /snap/cmake/1479/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_977de/fast]
+        ignore line: [gmake[1]: Entering directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_977de.dir/build.make CMakeFiles/cmTC_977de.dir/build]
+        ignore line: [gmake[2]: Entering directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu']
+        ignore line: [\x1b[0mBuilding C object CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o\x1b[0m;/usr/bin/gcc   -v -o CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1479/share/cmake-4.1/Modules/CMakeCCompilerABI.c;Using built-in specs.;COLLECT_GCC=/usr/bin/gcc;OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa;OFFLOAD_TARGET_DEFAULT=1;Target: x86_64-linux-gnu;Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.1.0-8ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2;Thread model: posix;Supported LTO compression algorithms: zlib zstd;gcc version 13.1.0 (Ubuntu 13.1.0-8ubuntu1~22.04) ;COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/'; /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/cmake/1479/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_977de.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjXtmmq.s;GNU C17 (Ubuntu 13.1.0-8ubuntu1~22.04) version 13.1.0 (x86_64-linux-gnu);	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP;;GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072;ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu";ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu";ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed";ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include";#include "..." search starts here:;#include <...> search starts here:; /usr/lib/gcc/x86_64-linux-gnu/13/include; /usr/local/include; /usr/include/x86_64-linux-gnu; /usr/include;End of search list.;Compiler executable checksum: d80f7a3177dda410206b6b40a1a1b357;COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/'; as -v --64 -o CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o /tmp/ccjXtmmq.s;GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38;COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/;LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/;COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.';\x1b[0mLinking C executable cmTC_977de\x1b[0m;/snap/cmake/1479/bin/cmake -E cmake_link_script CMakeFiles/cmTC_977de.dir/link.txt --verbose=1;Using built-in specs.;COLLECT_GCC=/usr/bin/gcc;COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper;OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa;OFFLOAD_TARGET_DEFAULT=1;Target: x86_64-linux-gnu;Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.1.0-8ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-IvzKaI/gcc-13-13.1.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2;Thread model: posix;Supported LTO compression algorithms: zlib zstd;gcc version 13.1.0 (Ubuntu 13.1.0-8ubuntu1~22.04) ;COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/;LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/;COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_977de' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_977de.'; /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCTw39h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_977de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o;collect2 version 13.1.0;/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCTw39h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_977de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o;GNU ld (GNU Binutils for Ubuntu) 2.38;COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_977de' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_977de.';/usr/bin/gcc  -v -Wl -v CMakeFiles/cmTC_977de.dir/CMakeCCompilerABI.c.o -o cmTC_977de;gmake[2]: Leaving directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu';gmake[1]: Leaving directory '/home/erik/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-MFuTPu';;]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:32 (find_package)"
+    name: "raylib"
+    configs:
+      -
+        filename: "raylibConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "raylib-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "raylib"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/erik/c/gigaUI/src/build/CMakeFiles/pkgRedirects/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/erik/c/gigaUI/src/build/CMakeFiles/pkgRedirects/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1479/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1479/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/snap/cmake/1479"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
+
+---
+events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "/snap/cmake/1479/share/cmake-4.1/Modules/FindPkgConfig.cmake:69 (find_program)"
+      - "/usr/lib/cmake/raylib/raylib-config.cmake:17 (find_package)"
+      - "CMakeLists.txt:32 (find_package)"
     mode: "program"
-    variable: "CMAKE_RC_COMPILER"
-    description: "RC compiler"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -1147,361 +1092,206 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "windres"
-      - "windres"
+      - "pkg-config"
+      - "pkgconf"
     candidate_directories:
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/"
-      - "C:/Users/eriks/scoop/shims/"
-      - "C:/Users/eriks/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/eriks/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Users/eriks/scoop/apps/cmake/current/bin/"
-      - "C:/Users/eriks/scoop/apps/cmake/current/sbin/"
-      - "C:/Users/eriks/scoop/apps/cmake/current/"
-      - "C:/Program Files (x86)/gigaUI/bin/"
-      - "C:/Program Files (x86)/gigaUI/sbin/"
-      - "C:/Program Files (x86)/gigaUI/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/snap/cmake/1479/bin/"
+      - "/snap/cmake/1479/sbin/"
+      - "/snap/cmake/1479/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
     searched_directories:
-      - "C:/Windows/System32/windres.com"
-      - "C:/Windows/System32/windres.exe"
-      - "C:/Windows/System32/windres"
-      - "C:/Windows/windres.com"
-      - "C:/Windows/windres.exe"
-      - "C:/Windows/windres"
-      - "C:/Windows/System32/wbem/windres.com"
-      - "C:/Windows/System32/wbem/windres.exe"
-      - "C:/Windows/System32/wbem/windres"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
-      - "C:/Windows/System32/OpenSSH/windres.com"
-      - "C:/Windows/System32/OpenSSH/windres.exe"
-      - "C:/Windows/System32/OpenSSH/windres"
-      - "C:/Program Files/Git/cmd/windres.com"
-      - "C:/Program Files/Git/cmd/windres.exe"
-      - "C:/Program Files/Git/cmd/windres"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres"
-      - "C:/Users/eriks/scoop/apps/gcc/current/bin/windres.com"
-    found: "C:/Users/eriks/scoop/apps/gcc/current/bin/windres.exe"
+      - "/usr/local/sbin/pkg-config"
+      - "/usr/local/sbin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+      - "/usr/sbin/pkg-config"
+      - "/usr/sbin/pkgconf"
+      - "/usr/bin/pkg-config"
+      - "/usr/bin/pkgconf"
+      - "/sbin/pkg-config"
+      - "/sbin/pkgconf"
+      - "/bin/pkg-config"
+      - "/bin/pkgconf"
+      - "/usr/games/pkg-config"
+      - "/usr/games/pkgconf"
+      - "/usr/local/games/pkg-config"
+      - "/usr/local/games/pkgconf"
+      - "/snap/bin/pkg-config"
+      - "/snap/bin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+      - "/usr/local/sbin/pkg-config"
+      - "/usr/local/sbin/pkgconf"
+      - "/usr/local/pkg-config"
+      - "/usr/local/pkgconf"
+      - "/usr/bin/pkg-config"
+      - "/usr/bin/pkgconf"
+      - "/usr/sbin/pkg-config"
+      - "/usr/sbin/pkgconf"
+      - "/usr/pkg-config"
+      - "/usr/pkgconf"
+      - "/bin/pkg-config"
+      - "/bin/pkgconf"
+      - "/sbin/pkg-config"
+      - "/sbin/pkgconf"
+      - "/snap/cmake/1479/bin/pkg-config"
+      - "/snap/cmake/1479/bin/pkgconf"
+      - "/snap/cmake/1479/sbin/pkg-config"
+      - "/snap/cmake/1479/sbin/pkgconf"
+      - "/snap/cmake/1479/pkg-config"
+      - "/snap/cmake/1479/pkgconf"
+      - "/usr/X11R6/bin/pkg-config"
+      - "/usr/X11R6/bin/pkgconf"
+      - "/usr/X11R6/sbin/pkg-config"
+      - "/usr/X11R6/sbin/pkgconf"
+      - "/usr/X11R6/pkg-config"
+      - "/usr/X11R6/pkgconf"
+      - "/usr/pkg/bin/pkg-config"
+      - "/usr/pkg/bin/pkgconf"
+      - "/usr/pkg/sbin/pkg-config"
+      - "/usr/pkg/sbin/pkgconf"
+      - "/usr/pkg/pkg-config"
+      - "/usr/pkg/pkgconf"
+      - "/opt/bin/pkg-config"
+      - "/opt/bin/pkgconf"
+      - "/opt/sbin/pkg-config"
+      - "/opt/sbin/pkgconf"
+      - "/opt/pkg-config"
+      - "/opt/pkgconf"
+    found: false
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/gigaUI"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/eriks/scoop/apps/cmake/current"
-        - "C:/Program Files (x86)/gigaUI"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5"
-      binary: "C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5'
-        
-        Run Build Command(s): C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/eriks/scoop/shims/make.exe -f Makefile cmTC_99285/fast
-        C:/Users/eriks/scoop/apps/make/current/bin/make.exe  -f CMakeFiles/cmTC_99285.dir/build.make CMakeFiles/cmTC_99285.dir/build
-        make[1]: Entering directory 'C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5'
-        Building C object CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj
-        C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe   -v -o CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj -c C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/e/temp/gcc/dest --with-sysroot=/e/temp/gcc/dest --disable-libstdcxx-pch --disable-libstdcxx-verbose --disable-nls --disable-shared --disable-win32-registry --enable-threads=posix --enable-libgomp --with-zstd=/c/mingw
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/'
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/cc1.exe -quiet -v -iprefix C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/ -D_REENTRANT C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_99285.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\eriks\\AppData\\Local\\Temp\\ccHQVBAh.s
-        GNU C17 (GCC) version 13.2.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.24-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/include"
-        ignoring nonexistent directory "/e/temp/gcc/dest/e/temp/gcc/dest/lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"
-        ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"
-        ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "/e/temp/gcc/dest/mingw/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\include
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include
-        End of search list.
-        Compiler executable checksum: 57be99a5b99999b94eef0e4814eb03c2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/'
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj C:\\Users\\eriks\\AppData\\Local\\Temp\\ccHQVBAh.s
-        GNU assembler version 2.41 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.41
-        COMPILER_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_99285.exe
-        C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E rm -f CMakeFiles/cmTC_99285.dir/objects.a
-        C:/Users/eriks/scoop/apps/gcc/current/bin/ar.exe qc CMakeFiles/cmTC_99285.dir/objects.a @CMakeFiles/cmTC_99285.dir/objects1.rsp
-        C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_99285.dir/objects.a -Wl,--no-whole-archive -o cmTC_99285.exe -Wl,--out-implib,libcmTC_99285.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        Using built-in specs.
-        COLLECT_GCC=C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe
-        COLLECT_LTO_WRAPPER=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/e/temp/gcc/dest --with-sysroot=/e/temp/gcc/dest --disable-libstdcxx-pch --disable-libstdcxx-verbose --disable-nls --disable-shared --disable-win32-registry --enable-threads=posix --enable-libgomp --with-zstd=/c/mingw
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.2.0 (GCC) 
-        COMPILER_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_99285.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_99285.'
-         C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/collect2.exe -plugin C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\eriks\\AppData\\Local\\Temp\\cc0l1Khe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/e/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_99285.exe C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0 -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../.. -v --whole-archive CMakeFiles/cmTC_99285.dir/objects.a --no-whole-archive --out-implib libcmTC_99285.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o
-        collect2 version 13.2.0
-        C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\eriks\\AppData\\Local\\Temp\\cc0l1Khe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/e/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_99285.exe C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0 -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../.. -v --whole-archive CMakeFiles/cmTC_99285.dir/objects.a --no-whole-archive --out-implib libcmTC_99285.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o
-        GNU ld (GNU Binutils) 2.41
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_99285.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_99285.'
-        make[1]: Leaving directory 'C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [C:/Users/eriks/scoop/apps/gcc/current/include]
-          add: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include]
-          add: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed]
-          add: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include]
-        end of search list found
-        collapse include dir [C:/Users/eriks/scoop/apps/gcc/current/include] ==> [C:/Users/eriks/scoop/apps/gcc/current/include]
-        collapse include dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/include]
-        collapse include dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed]
-        collapse include dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/include]
-        implicit include dirs: [C:/Users/eriks/scoop/apps/gcc/current/include;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/include;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed;C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5']
-        ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/eriks/scoop/shims/make.exe -f Makefile cmTC_99285/fast]
-        ignore line: [C:/Users/eriks/scoop/apps/make/current/bin/make.exe  -f CMakeFiles/cmTC_99285.dir/build.make CMakeFiles/cmTC_99285.dir/build]
-        ignore line: [make[1]: Entering directory 'C:/c/gigaUI/src/build/CMakeFiles/CMakeScratch/TryCompile-exm0k5']
-        ignore line: [Building C object CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe   -v -o CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj -c C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../src/configure --enable-languages=c c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/e/temp/gcc/dest --with-sysroot=/e/temp/gcc/dest --disable-libstdcxx-pch --disable-libstdcxx-verbose --disable-nls --disable-shared --disable-win32-registry --enable-threads=posix --enable-libgomp --with-zstd=/c/mingw]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/']
-        ignore line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/cc1.exe -quiet -v -iprefix C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/ -D_REENTRANT C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_99285.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\eriks\\AppData\\Local\\Temp\\ccHQVBAh.s]
-        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.24-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/include"]
-        ignore line: [ignoring nonexistent directory "/e/temp/gcc/dest/e/temp/gcc/dest/lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"]
-        ignore line: [ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "/e/temp/gcc/dest/mingw/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\include]
-        ignore line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include]
-        ignore line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed]
-        ignore line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 57be99a5b99999b94eef0e4814eb03c2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/']
-        ignore line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj C:\\Users\\eriks\\AppData\\Local\\Temp\\ccHQVBAh.s]
-        ignore line: [GNU assembler version 2.41 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.41]
-        ignore line: [COMPILER_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_99285.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_99285.exe]
-        ignore line: [C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E rm -f CMakeFiles/cmTC_99285.dir/objects.a]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/current/bin/ar.exe qc CMakeFiles/cmTC_99285.dir/objects.a @CMakeFiles/cmTC_99285.dir/objects1.rsp]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles/cmTC_99285.dir/objects.a -Wl --no-whole-archive -o cmTC_99285.exe -Wl --out-implib libcmTC_99285.dll.a -Wl --major-image-version 0 --minor-image-version 0]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../src/configure --enable-languages=c c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/e/temp/gcc/dest --with-sysroot=/e/temp/gcc/dest --disable-libstdcxx-pch --disable-libstdcxx-verbose --disable-nls --disable-shared --disable-win32-registry --enable-threads=posix --enable-libgomp --with-zstd=/c/mingw]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.2.0 (GCC) ]
-        ignore line: [COMPILER_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_99285.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_99285.']
-        link line: [ C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/collect2.exe -plugin C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\eriks\\AppData\\Local\\Temp\\cc0l1Khe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/e/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_99285.exe C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0 -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../.. -v --whole-archive CMakeFiles/cmTC_99285.dir/objects.a --no-whole-archive --out-implib libcmTC_99285.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o]
-          arg [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/collect2.exe] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\eriks\\AppData\\Local\\Temp\\cc0l1Khe.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [--sysroot=/e/temp/gcc/dest] ==> ignore
-          arg [-m] ==> ignore
-          arg [i386pep] ==> ignore
-          arg [-Bdynamic] ==> search dynamic
-          arg [-o] ==> ignore
-          arg [cmTC_99285.exe] ==> ignore
-          arg [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
-          arg [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o] ==> obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib]
-          arg [-LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../..] ==> dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../..]
-          arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles/cmTC_99285.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
-          arg [--out-implib] ==> ignore
-          arg [libcmTC_99285.dll.a] ==> ignore
-          arg [--major-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [--minor-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lmoldname] ==> lib [moldname]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lpthread] ==> lib [pthread]
-          arg [-ladvapi32] ==> lib [advapi32]
-          arg [-lshell32] ==> lib [shell32]
-          arg [-luser32] ==> lib [user32]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lmoldname] ==> lib [moldname]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o] ==> obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o]
-        ignore line: [collect2 version 13.2.0]
-        ignore line: [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\eriks\\AppData\\Local\\Temp\\cc0l1Khe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/e/temp/gcc/dest -m i386pep -Bdynamic -o cmTC_99285.exe C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0 -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../.. -v --whole-archive CMakeFiles/cmTC_99285.dir/objects.a --no-whole-archive --out-implib libcmTC_99285.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o]
-        linker tool for 'C': C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/bin/ld.exe
-        remove lib [msvcrt]
-        remove lib [msvcrt]
-        collapse obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/lib/crt2.o]
-        collapse obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o]
-        collapse obj [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/lib]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../lib] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/lib]
-        collapse library dir [C:/Users/eriks/scoop/apps/gcc/13.2.0/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../..] ==> [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib]
-        implicit libs: [mingw32;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
-        implicit objs: [C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/lib/crt2.o;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/crtbegin.o;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0/crtend.o]
-        implicit dirs: [C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc/x86_64-w64-mingw32/13.2.0;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib/gcc;C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/lib;C:/Users/eriks/scoop/apps/gcc/13.2.0/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Users/eriks/scoop/apps/cmake/current/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the C compiler's linker: "C:/Users/eriks/scoop/apps/gcc/13.2.0/x86_64-w64-mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.41
-...
-
----
-events:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/snap/cmake/1479"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:28 (find_library)"
+      - "/usr/lib/cmake/raylib/raylib-config.cmake:26 (find_path)"
+      - "CMakeLists.txt:32 (find_package)"
+    mode: "path"
+    variable: "raylib_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "raylib.h"
+    candidate_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/snap/cmake/1479/include/"
+      - "/snap/cmake/1479/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/usr/local/sbin/raylib.h"
+      - "/usr/local/bin/raylib.h"
+      - "/usr/sbin/raylib.h"
+      - "/usr/bin/raylib.h"
+      - "/sbin/raylib.h"
+      - "/bin/raylib.h"
+      - "/usr/games/raylib.h"
+      - "/usr/local/games/raylib.h"
+      - "/snap/bin/raylib.h"
+      - "/usr/local/include/raylib.h"
+      - "/usr/local/raylib.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/snap/cmake/1479"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/lib/cmake/raylib/raylib-config.cmake:37 (find_library)"
+      - "CMakeLists.txt:32 (find_package)"
     mode: "library"
-    variable: "RAYLIB_LIB"
+    variable: "raylib_LIBRARY"
     description: "Path to a library."
     settings:
       SearchFramework: "NEVER"
@@ -1514,29 +1304,64 @@ events:
     names:
       - "raylib"
     candidate_directories:
-      - "C:/c/gigaUI/lib/"
-    found: "C:/c/gigaUI/lib/libraylib.a"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/snap/cmake/1479/lib/"
+      - "/snap/cmake/1479/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libraylib.so"
     search_context:
       ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\eriks\\scoop\\apps\\gcc\\current\\bin"
-        - "C:\\Users\\eriks\\scoop\\shims"
-        - "C:\\Users\\eriks\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\eriks\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/gigaUI"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/eriks/scoop/apps/cmake/current"
-        - "C:/Program Files (x86)/gigaUI"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Program Files (x86)/gigaUI/bin"
-        - "C:/Users/eriks/scoop/apps/cmake/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
         - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/snap/cmake/1479"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
 ...

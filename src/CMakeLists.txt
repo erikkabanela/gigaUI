@@ -34,5 +34,5 @@ elseif(UNIX)
 	#include_directories(${PROJECT_SOURCE_DIR}/../include)
     #link_directories(${PROJECT_SOURCE_DIR}/../lib)
 
-    target_link_libraries(${PROJECT_NAME} raylib m GL X11 pthread dl rt)
+    target_link_libraries(${PROJECT_NAME} raylib m pthread dl rt)
 endif()

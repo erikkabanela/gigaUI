@@ -1,56 +1,56 @@
 [
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/main.c.obj -c C:/c/gigaUI/src/main.c",
-  "file": "C:/c/gigaUI/src/main.c",
-  "output": "CMakeFiles/gigaUI.dir/main.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/main.c.o -c /home/erik/c/gigaUI/src/main.c",
+  "file": "/home/erik/c/gigaUI/src/main.c",
+  "output": "CMakeFiles/gigaUI.dir/main.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/windows_helpers.c.obj -c C:/c/gigaUI/src/windows_helpers.c",
-  "file": "C:/c/gigaUI/src/windows_helpers.c",
-  "output": "CMakeFiles/gigaUI.dir/windows_helpers.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/windows_helpers.c.o -c /home/erik/c/gigaUI/src/windows_helpers.c",
+  "file": "/home/erik/c/gigaUI/src/windows_helpers.c",
+  "output": "CMakeFiles/gigaUI.dir/windows_helpers.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigabutton.c.obj -c C:/c/gigaUI/src/gigabutton.c",
-  "file": "C:/c/gigaUI/src/gigabutton.c",
-  "output": "CMakeFiles/gigaUI.dir/gigabutton.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigabutton.c.o -c /home/erik/c/gigaUI/src/gigabutton.c",
+  "file": "/home/erik/c/gigaUI/src/gigabutton.c",
+  "output": "CMakeFiles/gigaUI.dir/gigabutton.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigatext.c.obj -c C:/c/gigaUI/src/gigatext.c",
-  "file": "C:/c/gigaUI/src/gigatext.c",
-  "output": "CMakeFiles/gigaUI.dir/gigatext.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigatext.c.o -c /home/erik/c/gigaUI/src/gigatext.c",
+  "file": "/home/erik/c/gigaUI/src/gigatext.c",
+  "output": "CMakeFiles/gigaUI.dir/gigatext.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj -c C:/c/gigaUI/src/gigaradiobutton.c",
-  "file": "C:/c/gigaUI/src/gigaradiobutton.c",
-  "output": "CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.o -c /home/erik/c/gigaUI/src/gigaradiobutton.c",
+  "file": "/home/erik/c/gigaUI/src/gigaradiobutton.c",
+  "output": "CMakeFiles/gigaUI.dir/gigaradiobutton.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigacheckbox.c.obj -c C:/c/gigaUI/src/gigacheckbox.c",
-  "file": "C:/c/gigaUI/src/gigacheckbox.c",
-  "output": "CMakeFiles/gigaUI.dir/gigacheckbox.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigacheckbox.c.o -c /home/erik/c/gigaUI/src/gigacheckbox.c",
+  "file": "/home/erik/c/gigaUI/src/gigacheckbox.c",
+  "output": "CMakeFiles/gigaUI.dir/gigacheckbox.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigaslider.c.obj -c C:/c/gigaUI/src/gigaslider.c",
-  "file": "C:/c/gigaUI/src/gigaslider.c",
-  "output": "CMakeFiles/gigaUI.dir/gigaslider.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigaslider.c.o -c /home/erik/c/gigaUI/src/gigaslider.c",
+  "file": "/home/erik/c/gigaUI/src/gigaslider.c",
+  "output": "CMakeFiles/gigaUI.dir/gigaslider.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj -c C:/c/gigaUI/src/gigatoggleswitch.c",
-  "file": "C:/c/gigaUI/src/gigatoggleswitch.c",
-  "output": "CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o -c /home/erik/c/gigaUI/src/gigatoggleswitch.c",
+  "file": "/home/erik/c/gigaUI/src/gigatoggleswitch.c",
+  "output": "CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o"
 },
 {
-  "directory": "C:/c/gigaUI/src/build",
-  "command": "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe  @CMakeFiles/gigaUI.dir/includes_C.rsp -std=gnu17 -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj -c C:/c/gigaUI/src/cjson/cJSON.c",
-  "file": "C:/c/gigaUI/src/cjson/cJSON.c",
-  "output": "CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj"
+  "directory": "/home/erik/c/gigaUI/src/build",
+  "command": "/usr/bin/gcc   -std=gnu17 -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.o -c /home/erik/c/gigaUI/src/cjson/cJSON.c",
+  "file": "/home/erik/c/gigaUI/src/cjson/cJSON.c",
+  "output": "CMakeFiles/gigaUI.dir/cjson/cJSON.c.o"
 }
 ]

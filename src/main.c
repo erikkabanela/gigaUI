@@ -108,7 +108,7 @@ int main(void){
 		EnableDarkTitleBar(hwnd);
 	#endif
 	
-	Font my_font = LoadFontEx("C:\\Windows\\Fonts\\seguisb.ttf", 32, NULL, 0);
+	Font my_font = LoadFontEx("../fonts/JetBrainsMono-Medium.ttf", 32, NULL, 0);
 
 	giga_text gt = { "", 80, 400, 32, Fade(GetColor(GIGA_BLACK), 0.8f) };
 
@@ -151,8 +151,8 @@ int main(void){
 	char grb_x[4];
 	char grb_y[4];
 
-	itoa(grb.x, grb_x, 10);
-	itoa(grb.y, grb_y, 10);
+	//itoa(grb.x, grb_x, 10);
+	//itoa(grb.y, grb_y, 10);
 
 	const char* keys[] = { "label", "x", "y" };
 	const char* values[] = { grb.label, grb_x, grb_y };
