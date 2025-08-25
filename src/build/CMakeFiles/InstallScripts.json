@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/erik/c/gigaUI/src/build/cmake_install.cmake"
+		"C:/c/gigaUI/src/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

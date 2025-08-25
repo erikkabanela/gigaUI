@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "/usr/bin/gcc")
+set(CMAKE_C_COMPILER "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "13.1.0")
+set(CMAKE_C_COMPILER_VERSION "13.2.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -14,7 +14,7 @@ set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")
 set(CMAKE_C17_COMPILE_FEATURES "c_std_17")
 set(CMAKE_C23_COMPILE_FEATURES "c_std_23")
 
-set(CMAKE_C_PLATFORM_ID "Linux")
+set(CMAKE_C_PLATFORM_ID "MinGW")
 set(CMAKE_C_SIMULATE_ID "")
 set(CMAKE_C_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_C_COMPILER_APPLE_SYSROOT "")
@@ -23,11 +23,11 @@ set(CMAKE_C_COMPILER_ARCHITECTURE_ID "x86_64")
 
 
 
-set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_C_COMPILER_AR "/usr/bin/gcc-ar-13")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/usr/bin/gcc-ranlib-13")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_AR "C:/Users/eriks/scoop/apps/gcc/current/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "C:/Users/eriks/scoop/apps/gcc/current/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "C:/Users/eriks/scoop/apps/gcc/current/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/Users/eriks/scoop/apps/gcc/current/bin/ld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_C_COMPILER_LINKER "NOTFOUND")
@@ -53,7 +53,7 @@ set(CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED )
 
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "8")
-set(CMAKE_C_COMPILER_ABI "ELF")
+set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
@@ -78,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

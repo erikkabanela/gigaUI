@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1479/bin/cmake
+CMAKE_COMMAND = C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe
 
 # The command to remove a file.
-RM = /snap/cmake/1479/bin/cmake -E rm -f
+RM = C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/c/gigaUI/src
+CMAKE_SOURCE_DIR = C:/c/gigaUI/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/c/gigaUI/src/build
+CMAKE_BINARY_DIR = C:/c/gigaUI/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gigaUI.dir/depend.make
@@ -72,164 +72,176 @@ include CMakeFiles/gigaUI.dir/flags.make
 CMakeFiles/gigaUI.dir/codegen:
 .PHONY : CMakeFiles/gigaUI.dir/codegen
 
-CMakeFiles/gigaUI.dir/main.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/main.c.o: /home/erik/c/gigaUI/src/main.c
-CMakeFiles/gigaUI.dir/main.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gigaUI.dir/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/main.c.o -MF CMakeFiles/gigaUI.dir/main.c.o.d -o CMakeFiles/gigaUI.dir/main.c.o -c /home/erik/c/gigaUI/src/main.c
+CMakeFiles/gigaUI.dir/main.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/main.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/main.c.obj: C:/c/gigaUI/src/main.c
+CMakeFiles/gigaUI.dir/main.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gigaUI.dir/main.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/main.c.obj -MF CMakeFiles/gigaUI.dir/main.c.obj.d -o CMakeFiles/gigaUI.dir/main.c.obj -c C:/c/gigaUI/src/main.c
 
 CMakeFiles/gigaUI.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/main.c > CMakeFiles/gigaUI.dir/main.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/main.c > CMakeFiles/gigaUI.dir/main.c.i
 
 CMakeFiles/gigaUI.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/main.c -o CMakeFiles/gigaUI.dir/main.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/main.c -o CMakeFiles/gigaUI.dir/main.c.s
 
-CMakeFiles/gigaUI.dir/windows_helpers.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/windows_helpers.c.o: /home/erik/c/gigaUI/src/windows_helpers.c
-CMakeFiles/gigaUI.dir/windows_helpers.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gigaUI.dir/windows_helpers.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/windows_helpers.c.o -MF CMakeFiles/gigaUI.dir/windows_helpers.c.o.d -o CMakeFiles/gigaUI.dir/windows_helpers.c.o -c /home/erik/c/gigaUI/src/windows_helpers.c
+CMakeFiles/gigaUI.dir/windows_helpers.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/windows_helpers.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/windows_helpers.c.obj: C:/c/gigaUI/src/windows_helpers.c
+CMakeFiles/gigaUI.dir/windows_helpers.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gigaUI.dir/windows_helpers.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/windows_helpers.c.obj -MF CMakeFiles/gigaUI.dir/windows_helpers.c.obj.d -o CMakeFiles/gigaUI.dir/windows_helpers.c.obj -c C:/c/gigaUI/src/windows_helpers.c
 
 CMakeFiles/gigaUI.dir/windows_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/windows_helpers.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/windows_helpers.c > CMakeFiles/gigaUI.dir/windows_helpers.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/windows_helpers.c > CMakeFiles/gigaUI.dir/windows_helpers.c.i
 
 CMakeFiles/gigaUI.dir/windows_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/windows_helpers.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/windows_helpers.c -o CMakeFiles/gigaUI.dir/windows_helpers.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/windows_helpers.c -o CMakeFiles/gigaUI.dir/windows_helpers.c.s
 
-CMakeFiles/gigaUI.dir/gigabutton.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigabutton.c.o: /home/erik/c/gigaUI/src/gigabutton.c
-CMakeFiles/gigaUI.dir/gigabutton.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gigaUI.dir/gigabutton.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigabutton.c.o -MF CMakeFiles/gigaUI.dir/gigabutton.c.o.d -o CMakeFiles/gigaUI.dir/gigabutton.c.o -c /home/erik/c/gigaUI/src/gigabutton.c
+CMakeFiles/gigaUI.dir/gigabutton.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigabutton.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigabutton.c.obj: C:/c/gigaUI/src/gigabutton.c
+CMakeFiles/gigaUI.dir/gigabutton.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gigaUI.dir/gigabutton.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigabutton.c.obj -MF CMakeFiles/gigaUI.dir/gigabutton.c.obj.d -o CMakeFiles/gigaUI.dir/gigabutton.c.obj -c C:/c/gigaUI/src/gigabutton.c
 
 CMakeFiles/gigaUI.dir/gigabutton.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigabutton.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigabutton.c > CMakeFiles/gigaUI.dir/gigabutton.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigabutton.c > CMakeFiles/gigaUI.dir/gigabutton.c.i
 
 CMakeFiles/gigaUI.dir/gigabutton.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigabutton.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigabutton.c -o CMakeFiles/gigaUI.dir/gigabutton.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigabutton.c -o CMakeFiles/gigaUI.dir/gigabutton.c.s
 
-CMakeFiles/gigaUI.dir/gigatext.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigatext.c.o: /home/erik/c/gigaUI/src/gigatext.c
-CMakeFiles/gigaUI.dir/gigatext.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gigaUI.dir/gigatext.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigatext.c.o -MF CMakeFiles/gigaUI.dir/gigatext.c.o.d -o CMakeFiles/gigaUI.dir/gigatext.c.o -c /home/erik/c/gigaUI/src/gigatext.c
+CMakeFiles/gigaUI.dir/gigatext.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigatext.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigatext.c.obj: C:/c/gigaUI/src/gigatext.c
+CMakeFiles/gigaUI.dir/gigatext.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gigaUI.dir/gigatext.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigatext.c.obj -MF CMakeFiles/gigaUI.dir/gigatext.c.obj.d -o CMakeFiles/gigaUI.dir/gigatext.c.obj -c C:/c/gigaUI/src/gigatext.c
 
 CMakeFiles/gigaUI.dir/gigatext.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigatext.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigatext.c > CMakeFiles/gigaUI.dir/gigatext.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigatext.c > CMakeFiles/gigaUI.dir/gigatext.c.i
 
 CMakeFiles/gigaUI.dir/gigatext.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigatext.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigatext.c -o CMakeFiles/gigaUI.dir/gigatext.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigatext.c -o CMakeFiles/gigaUI.dir/gigatext.c.s
 
-CMakeFiles/gigaUI.dir/gigaradiobutton.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigaradiobutton.c.o: /home/erik/c/gigaUI/src/gigaradiobutton.c
-CMakeFiles/gigaUI.dir/gigaradiobutton.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/gigaUI.dir/gigaradiobutton.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigaradiobutton.c.o -MF CMakeFiles/gigaUI.dir/gigaradiobutton.c.o.d -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.o -c /home/erik/c/gigaUI/src/gigaradiobutton.c
+CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj: C:/c/gigaUI/src/gigaradiobutton.c
+CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj -MF CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj.d -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj -c C:/c/gigaUI/src/gigaradiobutton.c
 
 CMakeFiles/gigaUI.dir/gigaradiobutton.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigaradiobutton.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigaradiobutton.c > CMakeFiles/gigaUI.dir/gigaradiobutton.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigaradiobutton.c > CMakeFiles/gigaUI.dir/gigaradiobutton.c.i
 
 CMakeFiles/gigaUI.dir/gigaradiobutton.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigaradiobutton.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigaradiobutton.c -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigaradiobutton.c -o CMakeFiles/gigaUI.dir/gigaradiobutton.c.s
 
-CMakeFiles/gigaUI.dir/gigacheckbox.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigacheckbox.c.o: /home/erik/c/gigaUI/src/gigacheckbox.c
-CMakeFiles/gigaUI.dir/gigacheckbox.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/gigaUI.dir/gigacheckbox.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigacheckbox.c.o -MF CMakeFiles/gigaUI.dir/gigacheckbox.c.o.d -o CMakeFiles/gigaUI.dir/gigacheckbox.c.o -c /home/erik/c/gigaUI/src/gigacheckbox.c
+CMakeFiles/gigaUI.dir/gigacheckbox.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigacheckbox.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigacheckbox.c.obj: C:/c/gigaUI/src/gigacheckbox.c
+CMakeFiles/gigaUI.dir/gigacheckbox.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/gigaUI.dir/gigacheckbox.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigacheckbox.c.obj -MF CMakeFiles/gigaUI.dir/gigacheckbox.c.obj.d -o CMakeFiles/gigaUI.dir/gigacheckbox.c.obj -c C:/c/gigaUI/src/gigacheckbox.c
 
 CMakeFiles/gigaUI.dir/gigacheckbox.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigacheckbox.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigacheckbox.c > CMakeFiles/gigaUI.dir/gigacheckbox.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigacheckbox.c > CMakeFiles/gigaUI.dir/gigacheckbox.c.i
 
 CMakeFiles/gigaUI.dir/gigacheckbox.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigacheckbox.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigacheckbox.c -o CMakeFiles/gigaUI.dir/gigacheckbox.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigacheckbox.c -o CMakeFiles/gigaUI.dir/gigacheckbox.c.s
 
-CMakeFiles/gigaUI.dir/gigaslider.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigaslider.c.o: /home/erik/c/gigaUI/src/gigaslider.c
-CMakeFiles/gigaUI.dir/gigaslider.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/gigaUI.dir/gigaslider.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigaslider.c.o -MF CMakeFiles/gigaUI.dir/gigaslider.c.o.d -o CMakeFiles/gigaUI.dir/gigaslider.c.o -c /home/erik/c/gigaUI/src/gigaslider.c
+CMakeFiles/gigaUI.dir/gigaslider.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigaslider.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigaslider.c.obj: C:/c/gigaUI/src/gigaslider.c
+CMakeFiles/gigaUI.dir/gigaslider.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/gigaUI.dir/gigaslider.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigaslider.c.obj -MF CMakeFiles/gigaUI.dir/gigaslider.c.obj.d -o CMakeFiles/gigaUI.dir/gigaslider.c.obj -c C:/c/gigaUI/src/gigaslider.c
 
 CMakeFiles/gigaUI.dir/gigaslider.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigaslider.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigaslider.c > CMakeFiles/gigaUI.dir/gigaslider.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigaslider.c > CMakeFiles/gigaUI.dir/gigaslider.c.i
 
 CMakeFiles/gigaUI.dir/gigaslider.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigaslider.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigaslider.c -o CMakeFiles/gigaUI.dir/gigaslider.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigaslider.c -o CMakeFiles/gigaUI.dir/gigaslider.c.s
 
-CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o: /home/erik/c/gigaUI/src/gigatoggleswitch.c
-CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o -MF CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o.d -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o -c /home/erik/c/gigaUI/src/gigatoggleswitch.c
+CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj: C:/c/gigaUI/src/gigatoggleswitch.c
+CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj -MF CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj.d -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj -c C:/c/gigaUI/src/gigatoggleswitch.c
 
 CMakeFiles/gigaUI.dir/gigatoggleswitch.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/gigatoggleswitch.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/gigatoggleswitch.c > CMakeFiles/gigaUI.dir/gigatoggleswitch.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/gigatoggleswitch.c > CMakeFiles/gigaUI.dir/gigatoggleswitch.c.i
 
 CMakeFiles/gigaUI.dir/gigatoggleswitch.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/gigatoggleswitch.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/gigatoggleswitch.c -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/gigatoggleswitch.c -o CMakeFiles/gigaUI.dir/gigatoggleswitch.c.s
 
-CMakeFiles/gigaUI.dir/cjson/cJSON.c.o: CMakeFiles/gigaUI.dir/flags.make
-CMakeFiles/gigaUI.dir/cjson/cJSON.c.o: /home/erik/c/gigaUI/src/cjson/cJSON.c
-CMakeFiles/gigaUI.dir/cjson/cJSON.c.o: CMakeFiles/gigaUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/gigaUI.dir/cjson/cJSON.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/cjson/cJSON.c.o -MF CMakeFiles/gigaUI.dir/cjson/cJSON.c.o.d -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.o -c /home/erik/c/gigaUI/src/cjson/cJSON.c
+CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj: CMakeFiles/gigaUI.dir/flags.make
+CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj: CMakeFiles/gigaUI.dir/includes_C.rsp
+CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj: C:/c/gigaUI/src/cjson/cJSON.c
+CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj: CMakeFiles/gigaUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj"
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj -MF CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj.d -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj -c C:/c/gigaUI/src/cjson/cJSON.c
 
 CMakeFiles/gigaUI.dir/cjson/cJSON.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gigaUI.dir/cjson/cJSON.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/c/gigaUI/src/cjson/cJSON.c > CMakeFiles/gigaUI.dir/cjson/cJSON.c.i
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/c/gigaUI/src/cjson/cJSON.c > CMakeFiles/gigaUI.dir/cjson/cJSON.c.i
 
 CMakeFiles/gigaUI.dir/cjson/cJSON.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gigaUI.dir/cjson/cJSON.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/c/gigaUI/src/cjson/cJSON.c -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.s
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/c/gigaUI/src/cjson/cJSON.c -o CMakeFiles/gigaUI.dir/cjson/cJSON.c.s
 
 # Object files for target gigaUI
 gigaUI_OBJECTS = \
-"CMakeFiles/gigaUI.dir/main.c.o" \
-"CMakeFiles/gigaUI.dir/windows_helpers.c.o" \
-"CMakeFiles/gigaUI.dir/gigabutton.c.o" \
-"CMakeFiles/gigaUI.dir/gigatext.c.o" \
-"CMakeFiles/gigaUI.dir/gigaradiobutton.c.o" \
-"CMakeFiles/gigaUI.dir/gigacheckbox.c.o" \
-"CMakeFiles/gigaUI.dir/gigaslider.c.o" \
-"CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o" \
-"CMakeFiles/gigaUI.dir/cjson/cJSON.c.o"
+"CMakeFiles/gigaUI.dir/main.c.obj" \
+"CMakeFiles/gigaUI.dir/windows_helpers.c.obj" \
+"CMakeFiles/gigaUI.dir/gigabutton.c.obj" \
+"CMakeFiles/gigaUI.dir/gigatext.c.obj" \
+"CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj" \
+"CMakeFiles/gigaUI.dir/gigacheckbox.c.obj" \
+"CMakeFiles/gigaUI.dir/gigaslider.c.obj" \
+"CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj" \
+"CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj"
 
 # External object files for target gigaUI
 gigaUI_EXTERNAL_OBJECTS =
 
-gigaUI: CMakeFiles/gigaUI.dir/main.c.o
-gigaUI: CMakeFiles/gigaUI.dir/windows_helpers.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigabutton.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigatext.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigaradiobutton.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigacheckbox.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigaslider.c.o
-gigaUI: CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o
-gigaUI: CMakeFiles/gigaUI.dir/cjson/cJSON.c.o
-gigaUI: CMakeFiles/gigaUI.dir/build.make
-gigaUI: /usr/lib/libraylib.so
-gigaUI: CMakeFiles/gigaUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/erik/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable gigaUI"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gigaUI.dir/link.txt --verbose=$(VERBOSE)
+gigaUI.exe: CMakeFiles/gigaUI.dir/main.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/windows_helpers.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigabutton.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigatext.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigacheckbox.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigaslider.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj
+gigaUI.exe: CMakeFiles/gigaUI.dir/build.make
+gigaUI.exe: C:/c/gigaUI/lib/libraylib.a
+gigaUI.exe: CMakeFiles/gigaUI.dir/linkLibs.rsp
+gigaUI.exe: CMakeFiles/gigaUI.dir/objects1.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/c/gigaUI/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable gigaUI.exe"
+	C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E rm -f CMakeFiles/gigaUI.dir/objects.a
+	C:/Users/eriks/scoop/apps/gcc/current/bin/ar.exe qc CMakeFiles/gigaUI.dir/objects.a @CMakeFiles/gigaUI.dir/objects1.rsp
+	C:/Users/eriks/scoop/apps/gcc/current/bin/gcc.exe -Wl,--whole-archive CMakeFiles/gigaUI.dir/objects.a -Wl,--no-whole-archive -o gigaUI.exe -Wl,--out-implib,libgigaUI.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/gigaUI.dir/linkLibs.rsp
 
 # Rule to build all files generated by this target.
-CMakeFiles/gigaUI.dir/build: gigaUI
+CMakeFiles/gigaUI.dir/build: gigaUI.exe
 .PHONY : CMakeFiles/gigaUI.dir/build
 
 CMakeFiles/gigaUI.dir/clean:
@@ -237,6 +249,6 @@ CMakeFiles/gigaUI.dir/clean:
 .PHONY : CMakeFiles/gigaUI.dir/clean
 
 CMakeFiles/gigaUI.dir/depend:
-	cd /home/erik/c/gigaUI/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/c/gigaUI/src /home/erik/c/gigaUI/src /home/erik/c/gigaUI/src/build /home/erik/c/gigaUI/src/build /home/erik/c/gigaUI/src/build/CMakeFiles/gigaUI.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/c/gigaUI/src C:/c/gigaUI/src C:/c/gigaUI/src/build C:/c/gigaUI/src/build C:/c/gigaUI/src/build/CMakeFiles/gigaUI.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gigaUI.dir/depend
 

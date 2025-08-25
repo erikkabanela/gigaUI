@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1479/bin/cmake
+CMAKE_COMMAND = C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe
 
 # The command to remove a file.
-RM = /snap/cmake/1479/bin/cmake -E rm -f
+RM = C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/c/gigaUI/src
+CMAKE_SOURCE_DIR = C:/c/gigaUI/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/c/gigaUI/src/build
+CMAKE_BINARY_DIR = C:/c/gigaUI/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/erik/c/gigaUI/src/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1479/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:/Users/eriks/scoop/apps/cmake/current/bin/cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1479/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:/Users/eriks/scoop/apps/cmake/current/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/c/gigaUI/src/build/CMakeFiles /home/erik/c/gigaUI/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/c/gigaUI/src/build/CMakeFiles C:/c/gigaUI/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/c/gigaUI/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/c/gigaUI/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,13 +129,13 @@ gigaUI/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/build
 .PHONY : gigaUI/fast
 
-cjson/cJSON.o: cjson/cJSON.c.o
-.PHONY : cjson/cJSON.o
+cjson/cJSON.obj: cjson/cJSON.c.obj
+.PHONY : cjson/cJSON.obj
 
 # target to build an object file
-cjson/cJSON.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/cjson/cJSON.c.o
-.PHONY : cjson/cJSON.c.o
+cjson/cJSON.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/cjson/cJSON.c.obj
+.PHONY : cjson/cJSON.c.obj
 
 cjson/cJSON.i: cjson/cJSON.c.i
 .PHONY : cjson/cJSON.i
@@ -153,13 +153,13 @@ cjson/cJSON.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/cjson/cJSON.c.s
 .PHONY : cjson/cJSON.c.s
 
-gigabutton.o: gigabutton.c.o
-.PHONY : gigabutton.o
+gigabutton.obj: gigabutton.c.obj
+.PHONY : gigabutton.obj
 
 # target to build an object file
-gigabutton.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigabutton.c.o
-.PHONY : gigabutton.c.o
+gigabutton.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigabutton.c.obj
+.PHONY : gigabutton.c.obj
 
 gigabutton.i: gigabutton.c.i
 .PHONY : gigabutton.i
@@ -177,13 +177,13 @@ gigabutton.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigabutton.c.s
 .PHONY : gigabutton.c.s
 
-gigacheckbox.o: gigacheckbox.c.o
-.PHONY : gigacheckbox.o
+gigacheckbox.obj: gigacheckbox.c.obj
+.PHONY : gigacheckbox.obj
 
 # target to build an object file
-gigacheckbox.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigacheckbox.c.o
-.PHONY : gigacheckbox.c.o
+gigacheckbox.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigacheckbox.c.obj
+.PHONY : gigacheckbox.c.obj
 
 gigacheckbox.i: gigacheckbox.c.i
 .PHONY : gigacheckbox.i
@@ -201,13 +201,13 @@ gigacheckbox.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigacheckbox.c.s
 .PHONY : gigacheckbox.c.s
 
-gigaradiobutton.o: gigaradiobutton.c.o
-.PHONY : gigaradiobutton.o
+gigaradiobutton.obj: gigaradiobutton.c.obj
+.PHONY : gigaradiobutton.obj
 
 # target to build an object file
-gigaradiobutton.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaradiobutton.c.o
-.PHONY : gigaradiobutton.c.o
+gigaradiobutton.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaradiobutton.c.obj
+.PHONY : gigaradiobutton.c.obj
 
 gigaradiobutton.i: gigaradiobutton.c.i
 .PHONY : gigaradiobutton.i
@@ -225,13 +225,13 @@ gigaradiobutton.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaradiobutton.c.s
 .PHONY : gigaradiobutton.c.s
 
-gigaslider.o: gigaslider.c.o
-.PHONY : gigaslider.o
+gigaslider.obj: gigaslider.c.obj
+.PHONY : gigaslider.obj
 
 # target to build an object file
-gigaslider.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaslider.c.o
-.PHONY : gigaslider.c.o
+gigaslider.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaslider.c.obj
+.PHONY : gigaslider.c.obj
 
 gigaslider.i: gigaslider.c.i
 .PHONY : gigaslider.i
@@ -249,13 +249,13 @@ gigaslider.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigaslider.c.s
 .PHONY : gigaslider.c.s
 
-gigatext.o: gigatext.c.o
-.PHONY : gigatext.o
+gigatext.obj: gigatext.c.obj
+.PHONY : gigatext.obj
 
 # target to build an object file
-gigatext.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatext.c.o
-.PHONY : gigatext.c.o
+gigatext.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatext.c.obj
+.PHONY : gigatext.c.obj
 
 gigatext.i: gigatext.c.i
 .PHONY : gigatext.i
@@ -273,13 +273,13 @@ gigatext.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatext.c.s
 .PHONY : gigatext.c.s
 
-gigatoggleswitch.o: gigatoggleswitch.c.o
-.PHONY : gigatoggleswitch.o
+gigatoggleswitch.obj: gigatoggleswitch.c.obj
+.PHONY : gigatoggleswitch.obj
 
 # target to build an object file
-gigatoggleswitch.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatoggleswitch.c.o
-.PHONY : gigatoggleswitch.c.o
+gigatoggleswitch.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatoggleswitch.c.obj
+.PHONY : gigatoggleswitch.c.obj
 
 gigatoggleswitch.i: gigatoggleswitch.c.i
 .PHONY : gigatoggleswitch.i
@@ -297,13 +297,13 @@ gigatoggleswitch.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/gigatoggleswitch.c.s
 .PHONY : gigatoggleswitch.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+main.obj: main.c.obj
+.PHONY : main.obj
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/main.c.o
-.PHONY : main.c.o
+main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/main.c.obj
+.PHONY : main.c.obj
 
 main.i: main.c.i
 .PHONY : main.i
@@ -321,13 +321,13 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/main.c.s
 .PHONY : main.c.s
 
-windows_helpers.o: windows_helpers.c.o
-.PHONY : windows_helpers.o
+windows_helpers.obj: windows_helpers.c.obj
+.PHONY : windows_helpers.obj
 
 # target to build an object file
-windows_helpers.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/windows_helpers.c.o
-.PHONY : windows_helpers.c.o
+windows_helpers.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gigaUI.dir/build.make CMakeFiles/gigaUI.dir/windows_helpers.c.obj
+.PHONY : windows_helpers.c.obj
 
 windows_helpers.i: windows_helpers.c.i
 .PHONY : windows_helpers.i
@@ -354,31 +354,31 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gigaUI"
-	@echo "... cjson/cJSON.o"
+	@echo "... cjson/cJSON.obj"
 	@echo "... cjson/cJSON.i"
 	@echo "... cjson/cJSON.s"
-	@echo "... gigabutton.o"
+	@echo "... gigabutton.obj"
 	@echo "... gigabutton.i"
 	@echo "... gigabutton.s"
-	@echo "... gigacheckbox.o"
+	@echo "... gigacheckbox.obj"
 	@echo "... gigacheckbox.i"
 	@echo "... gigacheckbox.s"
-	@echo "... gigaradiobutton.o"
+	@echo "... gigaradiobutton.obj"
 	@echo "... gigaradiobutton.i"
 	@echo "... gigaradiobutton.s"
-	@echo "... gigaslider.o"
+	@echo "... gigaslider.obj"
 	@echo "... gigaslider.i"
 	@echo "... gigaslider.s"
-	@echo "... gigatext.o"
+	@echo "... gigatext.obj"
 	@echo "... gigatext.i"
 	@echo "... gigatext.s"
-	@echo "... gigatoggleswitch.o"
+	@echo "... gigatoggleswitch.obj"
 	@echo "... gigatoggleswitch.i"
 	@echo "... gigatoggleswitch.s"
-	@echo "... main.o"
+	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... windows_helpers.o"
+	@echo "... windows_helpers.obj"
 	@echo "... windows_helpers.i"
 	@echo "... windows_helpers.s"
 .PHONY : help
