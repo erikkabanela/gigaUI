@@ -12,3 +12,4 @@
 #include "gigatoggleswitch.h"
 
 extern bool dark_mode;
+extern bool edit_mode;

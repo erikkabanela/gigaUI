@@ -7,11 +7,11 @@
 #include "gigacolors.h"
 
 typedef struct {
-	char* label;
-	float roundness;
-	bool hovered;
-	Rectangle rec;
-	Color color, default_color;
+    char* label;
+    float roundness;
+    bool hovered;
+    Rectangle rec;
+    Color color, default_color;
 } giga_button;
 
 void giga_draw_button(giga_button* gb, Font* my_font);
