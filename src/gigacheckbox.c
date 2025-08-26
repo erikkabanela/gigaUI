@@ -13,6 +13,7 @@ void giga_draw_checkbox(giga_checkbox* gcb, Font* my_font){
         DrawTextureEx(gcb->image, (Vector2) { gcb->rec.x - 2, gcb->rec.y - 1 }, 0.0f, 0.07f, WHITE);
     else
         DrawRectangleRounded(gcb->rec, 0.25f, 15, dark_mode ? GetColor(GIGA_LIGHTBLACK) : GetColor(GIGA_LIGHTGRAY));
+
     DrawRectangleRoundedLinesEx(gcb->rec, 0.25f, 15, 2.0f, dark_mode ? BLACK : GetColor(GIGA_GRAY));
     Vector2 label_pos = { gcb->rec.x + gcb->rec.width + 5, gcb->rec.y };
 

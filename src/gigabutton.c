@@ -20,7 +20,7 @@ void giga_draw_button(giga_button* gb, Font* my_font){
 
 bool giga_button_is_clicked(giga_button* gb){
     if(!edit_mode && gb->hovered){
-	return IsMouseButtonPressed(MOUSE_BUTTON_LEFT);
+	    return IsMouseButtonPressed(MOUSE_BUTTON_LEFT);
     }
     return false;
 }
@@ -32,25 +32,25 @@ bool giga_process_button(giga_button* gb){
     static Vector2 drag_offset = {0};
 
     if(edit_mode){
-	if(!dragging && gb->hovered && IsMouseButtonDown(MOUSE_BUTTON_LEFT)){
-	    dragging = true;
-	    drag_offset = (Vector2) { GetMousePosition().x - gb->rec.x, GetMousePosition().y - gb->rec.y };
-	}
-	if(IsMouseButtonReleased(MOUSE_BUTTON_LEFT)){
-	    dragging = false;
-	}
+        if(!dragging && gb->hovered && IsMouseButtonDown(MOUSE_BUTTON_LEFT)){
+            dragging = true;
+            drag_offset = (Vector2) { GetMousePosition().x - gb->rec.x, GetMousePosition().y - gb->rec.y };
+        }
+        if(IsMouseButtonReleased(MOUSE_BUTTON_LEFT)){
+            dragging = false;
+        }
 
-	if(dragging){
-	    gb->rec.x = GetMousePosition().x - drag_offset.x;
-	    gb->rec.y = GetMousePosition().y - drag_offset.y;
-	}
+        if(dragging){
+            gb->rec.x = GetMousePosition().x - drag_offset.x;
+            gb->rec.y = GetMousePosition().y - drag_offset.y;
+        }
     }
     else{
-	Color hover_color = Fade(gb->default_color, (gb->default_color.a / 255) + 1.0f);
-	if(giga_button_is_clicked(gb))
-	    gb->color = Fade(gb->default_color, 0.5f);
-	else
-	    gb->color = gb->hovered ? hover_color : gb->default_color;
+        Color hover_color = Fade(gb->default_color, (gb->default_color.a / 255) + 1.0f);
+        if(giga_button_is_clicked(gb))
+            gb->color = Fade(gb->default_color, 0.5f);
+        else
+            gb->color = gb->hovered ? hover_color : gb->default_color;
     }
     return gb->hovered;
 }

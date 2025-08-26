@@ -33,18 +33,18 @@ bool edit_mode = false;
 
 void process_radiobuttons(giga_radiobutton* group[], bool* radiobuttons_state[], int clicked){
     for (int i = 0; i < 3; i++)
-	if (giga_process_radiobutton(group[i])) clicked = i;
+		if (giga_process_radiobutton(group[i])) clicked = i;
 
     if (clicked != -1) {
-	for (int i = 0; i < 3; i++)
-	    *radiobuttons_state[i] = (i == clicked);  // clicked one true, others false
+		for (int i = 0; i < 3; i++)
+	    	*radiobuttons_state[i] = (i == clicked);  // clicked one true, others false
     }
 }
 
 void process_checkbox(giga_checkbox* group[], bool* checkbox_state[]){
     for(int i = 0; i < 2; i++){
-	if(giga_process_checkbox(group[i]))
-	    *checkbox_state[i] = group[i]->active ? false : true;
+		if(giga_process_checkbox(group[i]))
+	    	*checkbox_state[i] = group[i]->active ? false : true;
     }
 }
 
@@ -52,15 +52,15 @@ void json_write(const char* filename, const char* key[], const char* value[], co
     cJSON* json = cJSON_CreateObject();
 
     for(int i = 0; i < size; i++){
-	cJSON_AddStringToObject(json, key[i], value[i]);
+		cJSON_AddStringToObject(json, key[i], value[i]);
     }
 
     char* json_str = cJSON_Print(json);
 
     FILE* file = fopen(filename, "w");
     if(file){
-	fputs(json_str, file);
-	fclose(file);
+		fputs(json_str, file);
+		fclose(file);
     }
 
     free(json_str);
@@ -74,21 +74,21 @@ void json_read(const char* filename, giga_radiobutton* grb){
     FILE* file = fopen(filename, "r");
 
     while(!feof(file)){
-	buf[i++] = fgetc(file);
+		buf[i++] = fgetc(file);
     }
 
     cJSON* root = cJSON_Parse(buf);
 
     if(cJSON_IsObject(root)){
 	cJSON* item = NULL;
-	cJSON_ArrayForEach(item, root){
-	    if(cJSON_IsString(item) && strcmp(item->string, "x") == 0){
-		grb->x = atoi(item->valuestring);
-	    }
-	    else if(cJSON_IsString(item) && strcmp(item->string, "y") == 0){
-		grb->y = atoi(item->valuestring);
-	    }
-	}
+		cJSON_ArrayForEach(item, root){
+			if(cJSON_IsString(item) && strcmp(item->string, "x") == 0){
+				grb->x = atoi(item->valuestring);
+			}
+			else if(cJSON_IsString(item) && strcmp(item->string, "y") == 0){
+				grb->y = atoi(item->valuestring);
+			}
+		}
     }
 
     fclose(file);
@@ -179,9 +179,9 @@ int main(void){
 
 	if(is_moai_visible){
 	    if(gts.active)
-		moai_src.width = -moai.width;
+			moai_src.width = -moai.width;
 	    else
-		moai_src.width = moai.width;
+			moai_src.width = moai.width;
 	}
 
 	if(gts2.active)
@@ -229,12 +229,13 @@ int main(void){
 	for(int i = 0; i < 3; i++){
 	    giga_draw_radiobutton(radiobutton_group[i], &my_font);
 	    if(radiobutton_group[i]->active){
-		if(strcmp(radiobutton_group[i]->label, "Bob") == 0){
-		    char temp_label[255];
-		    strcpy(temp_label, radiobutton_group[i]->label);
-		    strcpy(gt.str, strcat(temp_label, " Gigachad"));
-		}
-		else strcpy(gt.str, radiobutton_group[i]->label);
+			if(strcmp(radiobutton_group[i]->label, "Bob") == 0){
+		    	char temp_label[255];
+		    	strcpy(temp_label, radiobutton_group[i]->label);
+		    	strcpy(gt.str, strcat(temp_label, " Gigachad"));
+			}
+			else
+				strcpy(gt.str, radiobutton_group[i]->label);
 	    }
 	}
 
