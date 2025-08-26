@@ -6,6 +6,8 @@
 
 #include "gigacolors.h"
 
+#define MAX_BUTTONS 128
+
 typedef struct {
     char label[255];
     float roundness;

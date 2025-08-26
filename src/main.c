@@ -149,6 +149,12 @@ int main(void){
 	giga_button gb2 = { "Save Layout", button_roundness, false, (Rectangle) { 650, 30, button_width, button_height }, 
 						Fade(GetColor(GIGA_BLUE), 0.9f), Fade(GetColor(GIGA_GREEN), 0.9f) };
 
+	giga_button gb3 = { "Add Button", button_roundness, false, (Rectangle) { 650, 500, button_width, button_height }, 
+						Fade(GetColor(GIGA_BLUE), 0.9f), Fade(GetColor(GIGA_GREEN), 0.9f) };
+
+	giga_button buttons[MAX_BUTTONS];
+	int button_count = 0;
+
     bool is_moai_visible = true;
     Texture2D moai = LoadTexture("moai.png");
     Rectangle moai_src = { 0, 0, -moai.width, moai.height };
@@ -210,8 +216,6 @@ int main(void){
 		//gb.rec.x = ((float)screen_width / 2) - gb.rec.width / 2;
 		//gb.rec.y = ((float)screen_height / 2) - gb.rec.height / 2;
 		//gb.rec.y = ((float)screen_height - gb.rec.height) - gb.rec.height / 2;
-		giga_process_button(&gb);
-		giga_process_button(&gb2);
 
 		process_radiobuttons(radiobutton_group, radiobuttons_state, clicked);
 
@@ -234,6 +238,23 @@ int main(void){
 
 		giga_draw_button(&gb, &my_font);
 		giga_draw_button(&gb2, &my_font);
+		giga_draw_button(&gb3, &my_font);
+		if(giga_button_is_clicked(&gb3)){
+			buttons[button_count] = (giga_button) { "Default Button", button_roundness, false, (Rectangle) { 650, 500, button_width, button_height }, 
+						Fade(GetColor(GIGA_BLUE), 0.9f), Fade(GetColor(GIGA_GREEN), 0.9f) };
+			button_count++;
+		}
+
+		if(button_count > 0){
+			for(int i = 0; i < button_count; i++){
+				giga_process_button(&buttons[i]);
+				giga_draw_button(&buttons[i], &my_font);
+			}
+		}
+
+		giga_process_button(&gb);
+		giga_process_button(&gb2);
+		giga_process_button(&gb3);
 
 		//printf("%.2f, %2.f\n", gb.rec.x, gb2.rec.x);
 
