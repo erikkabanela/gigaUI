@@ -169,89 +169,89 @@ int main(void){
     //printf("\n%d %d\n", grb.x, grb.y);
 
     while(!WindowShouldClose()){
-	int screen_width = GetScreenWidth();
-	int screen_height = GetScreenHeight();
+		int screen_width = GetScreenWidth();
+		int screen_height = GetScreenHeight();
 
-	// Move moais head
+		// Move moais head
 
-	if(giga_button_is_clicked(&gb))
-	    is_moai_visible = !is_moai_visible;
+		if(giga_button_is_clicked(&gb))
+			is_moai_visible = !is_moai_visible;
 
-	if(is_moai_visible){
-	    if(gts.active)
-			moai_src.width = -moai.width;
-	    else
-			moai_src.width = moai.width;
-	}
-
-	if(gts2.active)
-	    dark_mode = true;
-	else
-	    dark_mode = false;
-
-	if(gts3.active)
-	    edit_mode = true;
-	else
-	    edit_mode = false;
-
-	int x = ((float)screen_width / 2) - moai.width / 2;
-	int y = ((float)screen_height / 2) - moai.height / 2;
-
-	//gb.rec.x = ((float)screen_width / 2) - gb.rec.width / 2;
-	//gb.rec.y = ((float)screen_height / 2) - gb.rec.height / 2;
-	//gb.rec.y = ((float)screen_height - gb.rec.height) - gb.rec.height / 2;
-	giga_process_button(&gb);
-
-	process_radiobuttons(radiobutton_group, radiobuttons_state, clicked);
-
-	process_checkbox(checkbox_group, checkbox_state);
-
-	giga_process_toggleswitch(&gts);
-	giga_process_toggleswitch(&gts2);
-	giga_process_toggleswitch(&gts3);
-
-	double value_current = giga_process_slider(&gs);
-
-	BeginDrawing();
-
-	ClearBackground(dark_mode ? GetColor(GIGA_BLACK) : GetColor(GIGA_WHITE));
-
-	if(is_moai_visible)
-	    DrawTextureRec(moai, moai_src, (Vector2) { (float)x, (float)y }, (Color) { 255, 255, 255, (int)value_current });
-
-	//printf("%d\n", (int)value_current);
-
-	//giga_draw_text(&gt);
-
-	giga_draw_button(&gb, &my_font);
-	//giga_draw_button(&gb2, &my_font);
-
-	for(int i = 0; i < 3; i++){
-	    giga_draw_radiobutton(radiobutton_group[i], &my_font);
-	    if(radiobutton_group[i]->active){
-			if(strcmp(radiobutton_group[i]->label, "Bob") == 0){
-		    	char temp_label[255];
-		    	strcpy(temp_label, radiobutton_group[i]->label);
-		    	strcpy(gt.str, strcat(temp_label, " Gigachad"));
-			}
+		if(is_moai_visible){
+			if(gts.active)
+				moai_src.width = -moai.width;
 			else
-				strcpy(gt.str, radiobutton_group[i]->label);
-	    }
-	}
+				moai_src.width = moai.width;
+		}
 
-	giga_draw_text(&gt, &my_font);
+		if(gts2.active)
+			dark_mode = true;
+		else
+			dark_mode = false;
 
-	for(int i = 0; i < 2; i++){
-	    giga_draw_checkbox(checkbox_group[i], &my_font);
-	}
+		if(gts3.active)
+			edit_mode = true;
+		else
+			edit_mode = false;
 
-	giga_draw_slider(&gs);
+		int x = ((float)screen_width / 2) - moai.width / 2;
+		int y = ((float)screen_height / 2) - moai.height / 2;
 
-	giga_draw_toggleswitch(&gts, &my_font);
-	giga_draw_toggleswitch(&gts2, &my_font);
-	giga_draw_toggleswitch(&gts3, &my_font);
-    
-	EndDrawing();
+		//gb.rec.x = ((float)screen_width / 2) - gb.rec.width / 2;
+		//gb.rec.y = ((float)screen_height / 2) - gb.rec.height / 2;
+		//gb.rec.y = ((float)screen_height - gb.rec.height) - gb.rec.height / 2;
+		giga_process_button(&gb);
+
+		process_radiobuttons(radiobutton_group, radiobuttons_state, clicked);
+
+		process_checkbox(checkbox_group, checkbox_state);
+
+		giga_process_toggleswitch(&gts);
+		giga_process_toggleswitch(&gts2);
+		giga_process_toggleswitch(&gts3);
+
+		double value_current = giga_process_slider(&gs);
+
+		BeginDrawing();
+
+		ClearBackground(dark_mode ? GetColor(GIGA_BLACK) : GetColor(GIGA_WHITE));
+
+		if(is_moai_visible)
+			DrawTextureRec(moai, moai_src, (Vector2) { (float)x, (float)y }, (Color) { 255, 255, 255, (int)value_current });
+
+		//printf("%d\n", (int)value_current);
+
+		//giga_draw_text(&gt);
+
+		giga_draw_button(&gb, &my_font);
+		//giga_draw_button(&gb2, &my_font);
+
+		for(int i = 0; i < 3; i++){
+			giga_draw_radiobutton(radiobutton_group[i], &my_font);
+			if(radiobutton_group[i]->active){
+				if(strcmp(radiobutton_group[i]->label, "Bob") == 0){
+					char temp_label[255];
+					strcpy(temp_label, radiobutton_group[i]->label);
+					strcpy(gt.str, strcat(temp_label, " Gigachad"));
+				}
+				else
+					strcpy(gt.str, radiobutton_group[i]->label);
+			}
+		}
+
+		giga_draw_text(&gt, &my_font);
+
+		for(int i = 0; i < 2; i++){
+			giga_draw_checkbox(checkbox_group[i], &my_font);
+		}
+
+		giga_draw_slider(&gs);
+
+		giga_draw_toggleswitch(&gts, &my_font);
+		giga_draw_toggleswitch(&gts2, &my_font);
+		giga_draw_toggleswitch(&gts3, &my_font);
+		
+		EndDrawing();
     }
 
     UnloadFont(my_font);
