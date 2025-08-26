@@ -1,3 +1,0 @@
-/home/erik/c/gigaUI/src/build/CMakeFiles/gigaUI.dir
-/home/erik/c/gigaUI/src/build/CMakeFiles/edit_cache.dir
-/home/erik/c/gigaUI/src/build/CMakeFiles/rebuild_cache.dir
