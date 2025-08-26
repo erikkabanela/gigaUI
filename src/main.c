@@ -67,7 +67,7 @@ void json_write(const char* filename, const char* key[], const char* value[], co
     cJSON_Delete(json);
 }
 
-void json_read(const char* filename, giga_radiobutton* grb){
+void json_read(const char* filename, giga_button* gb){
     char buf[255];
     int i = 0;
 
@@ -80,13 +80,16 @@ void json_read(const char* filename, giga_radiobutton* grb){
     cJSON* root = cJSON_Parse(buf);
 
     if(cJSON_IsObject(root)){
-	cJSON* item = NULL;
+		cJSON* item = NULL;
 		cJSON_ArrayForEach(item, root){
-			if(cJSON_IsString(item) && strcmp(item->string, "x") == 0){
-				grb->x = atoi(item->valuestring);
+			if(strcmp(item->string, "label") == 0){
+				strcpy(gb->label, item->valuestring);
 			}
-			else if(cJSON_IsString(item) && strcmp(item->string, "y") == 0){
-				grb->y = atoi(item->valuestring);
+			if(strcmp(item->string, "x") == 0){
+				gb->rec.x = item->valueint;
+			}
+			else if(strcmp(item->string, "y") == 0){
+				gb->rec.y = item->valueint;
 			}
 		}
     }
@@ -104,9 +107,9 @@ int main(void){
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, window_title);
 
     #ifdef _WIN32
-	dark_mode = IsWindowsDarkMode();
-	HWND hwnd = (HWND)GetWindowHandle();
-	EnableDarkTitleBar(hwnd);
+		dark_mode = IsWindowsDarkMode();
+		HWND hwnd = (HWND)GetWindowHandle();
+		EnableDarkTitleBar(hwnd);
     #endif
     
     Font my_font = LoadFontEx("../fonts/JetBrainsMono-Medium.ttf", 32, NULL, 0);
@@ -143,6 +146,9 @@ int main(void){
     giga_toggleswitch gts2 = { "Dark Mode", (Rectangle) { 150, 550, 80, 40 }, 0.9f, dark_mode };
     giga_toggleswitch gts3 = { "Edit Mode", (Rectangle) { 525, 30, 80, 40 }, 0.9f, edit_mode };
 
+	giga_button gb2 = { "Save Layout", button_roundness, false, (Rectangle) { 650, 30, button_width, button_height }, 
+						Fade(GetColor(GIGA_BLUE), 0.9f), Fade(GetColor(GIGA_GREEN), 0.9f) };
+
     bool is_moai_visible = true;
     Texture2D moai = LoadTexture("moai.png");
     Rectangle moai_src = { 0, 0, -moai.width, moai.height };
@@ -164,7 +170,7 @@ int main(void){
 
     //json_write(filename, keys, values, size);
 
-    json_read(filename, &grb);
+    json_read(filename, &gb);
 
     //printf("\n%d %d\n", grb.x, grb.y);
 
@@ -183,11 +189,15 @@ int main(void){
 			else
 				moai_src.width = moai.width;
 		}
+		
+		// Dark Mode switch
 
 		if(gts2.active)
 			dark_mode = true;
 		else
 			dark_mode = false;
+
+		// Edit Mode switch
 
 		if(gts3.active)
 			edit_mode = true;
@@ -201,6 +211,7 @@ int main(void){
 		//gb.rec.y = ((float)screen_height / 2) - gb.rec.height / 2;
 		//gb.rec.y = ((float)screen_height - gb.rec.height) - gb.rec.height / 2;
 		giga_process_button(&gb);
+		giga_process_button(&gb2);
 
 		process_radiobuttons(radiobutton_group, radiobuttons_state, clicked);
 
@@ -221,10 +232,10 @@ int main(void){
 
 		//printf("%d\n", (int)value_current);
 
-		//giga_draw_text(&gt);
-
 		giga_draw_button(&gb, &my_font);
-		//giga_draw_button(&gb2, &my_font);
+		giga_draw_button(&gb2, &my_font);
+
+		//printf("%.2f, %2.f\n", gb.rec.x, gb2.rec.x);
 
 		for(int i = 0; i < 3; i++){
 			giga_draw_radiobutton(radiobutton_group[i], &my_font);

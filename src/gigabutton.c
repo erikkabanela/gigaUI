@@ -7,15 +7,18 @@ void giga_draw_button(giga_button* gb, Font* my_font){
 
     // Change font size with button size
 
-    if(gb->rec.width < font_size.x && gb->rec.height < font_size.y){
+    if(gb->rec.width < font_size.x){
         gb->rec.width = (int)font_size.x + font_offsetX;
+    }
+
+    if(gb->rec.height < font_size.y){
         gb->rec.height = (int)font_size.y + font_offsetY;
     }
 
     DrawRectangleRounded(gb->rec, gb->roundness, 15, gb->color); // Always 15 segments ඞ
     DrawRectangleRoundedLinesEx(gb->rec, gb->roundness, 0, 1.5f, dark_mode ? BLACK : GetColor(GIGA_GRAY));
     Vector2 label_pos = { gb->rec.x + (gb->rec.width - font_size.x) / 2, gb->rec.y + (gb->rec.height - font_size.y) / 2 };
-    DrawTextEx(*my_font, gb->label, label_pos, my_font->baseSize, 0.0f, dark_mode ? WHITE : BLACK); 
+    DrawTextEx(*my_font, gb->label, label_pos, my_font->baseSize, 0.0f, dark_mode ? WHITE : BLACK);
 }
 
 bool giga_button_is_clicked(giga_button* gb){
@@ -25,14 +28,16 @@ bool giga_button_is_clicked(giga_button* gb){
     return false;
 }
 
+static giga_button *active_button = NULL;
+static bool dragging = false;
+static Vector2 drag_offset = {0};
+
 bool giga_process_button(giga_button* gb){
     gb->hovered = CheckCollisionPointRec(GetMousePosition(), gb->rec);
     
-    static bool dragging = false; 
-    static Vector2 drag_offset = {0};
-
     if(edit_mode){
         if(!dragging && gb->hovered && IsMouseButtonDown(MOUSE_BUTTON_LEFT)){
+            active_button = gb;
             dragging = true;
             drag_offset = (Vector2) { GetMousePosition().x - gb->rec.x, GetMousePosition().y - gb->rec.y };
         }
@@ -40,7 +45,7 @@ bool giga_process_button(giga_button* gb){
             dragging = false;
         }
 
-        if(dragging){
+        if(dragging && (active_button == gb)){
             gb->rec.x = GetMousePosition().x - drag_offset.x;
             gb->rec.y = GetMousePosition().y - drag_offset.y;
         }

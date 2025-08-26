@@ -7,7 +7,7 @@
 #include "gigacolors.h"
 
 typedef struct {
-    char* label;
+    char label[255];
     float roundness;
     bool hovered;
     Rectangle rec;

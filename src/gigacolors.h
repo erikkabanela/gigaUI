@@ -1,8 +1,7 @@
 #pragma once
 
-// SALT AND PEPPER ඞ
-
-// alpha = ff at the of each color
+// ඞ
+// alpha = ff at the end of each color
 #define GIGA_WHITE 0xffffffff
 #define GIGA_LIGHTGRAY 0xfcfcfcff
 #define GIGA_GRAY 0xbbbbbbff
